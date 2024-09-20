@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.navs{
+    display: flex;
+    float: right;
+}
+.navs ul a {
+    position: relative;
+    display: flex;
+    margin-right: 40px;
+    padding: 0 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: monospace;
+    color: white;
+    padding: 3px;
+    transition: all 0.6s;
+    /* color: white; */
+}
+
+li::before{
+    position: relative;
+  
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 187, 0);
+    display: block;
+    border-radius: 1cm;
+    transition: all 0.8s;
+}
+li::after{
+    position: relative;
+  /* right: 0%; */
+  left: 100%;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 187, 0);
+    display: block;
+    border-radius: 1cm; 
+    transition:all 0.8s; 
+
+}
+li:hover::after{
+    position: relative;
+    left: 0%;
+    width: 100%;
+    
+}
+li:hover::before{
+    position: relative;
+    width: 100%;
+
+}
+li:hover{
+    color: orange;
+}
+
+.logo{
+    /* position: absolute; */
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+.logo h2{
+    display: inline-block;
+}
+.logo  i{
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 10px;
+
+}
+.logo span{
+    display: inline-block;
+    color: rgb(255, 115, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.container1{
+    background-image:linear-gradient(rgba(17, 16, 16, 0.637), rgba(36, 32, 32, 0.623)), url(photo/bg.avif);
+    background-size: cover;
+    height: 900px;
+    
+}
+.container1 .head1{
+    text-align: center;
+    margin-top: 300px;
+    font-size: 70px;
+    color: white;
+}
+.paara1{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.hr{
+    width: 80%;
+    border: 2px solid  white;
+    margin: auto;
+    margin-top: 20px;
+}
+.btn1{
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-bottom: 400px;
+    transition: all 0.6s;
+}
+.btn1:hover{
+    background-color: rgba(221, 75, 22, 0.486);
+    border-radius: 25px ;
+
+}
+.head2{
+    font-family: 'Protest Riot', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.container2 {
+    display: flex;
+    justify-content: space-around;
+}
+.container2 div{
+    /* border: 2px solid black; */
+    width: 25%;
+    height: 250px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+}
+.container2 div h1{
+    text-align: center;
+}
+.container2 p{
+    margin-top: 10px;
+    padding: 20px;
+}
+.head3{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Protest Riot', sans-serif;
+}
+hr{
+    border: 2px solid gray;
+    width: 85%;
+    margin: auto;
+    margin-top: 40px;
+}
+.container4 {
+    display: flex;
+    justify-content: space-around;
+}
+.container4 div{
+    position: relative;
+    overflow: hidden;
+    border: 1px solid ;
+    width: 30%;
+    height: 400px;
+}
+.container4 div img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s;
+}
+.container4 div img:hover{
+    transform: scale(1.2) rotate(12deg);
+    filter:grayscale(10);
+    opacity: 0.6;
+}
+.container4 div h1{
+    display: none;
+    z-index: 3;
+    position: absolute;
+    font-size: 45px;
+    top: 150px;
+    left: 80px;
+}
+.container4 div:hover h1{
+    display: block;
+}
+.head4{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Protest Riot', sans-serif;
+}
+
+
+.container5  h1{
+    text-align: center;
+}
+
+.container5 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .container5 div {
+    position: relative;
+    /* border: 2px solid black; */
+    width: 30%;
+    height: 40vh;
+    overflow: hidden;
+  }
+  .container5 div img {
+    transition: all 1s;
+    width: 100%;
+    height: 100%;
+    /* filter: grayscale(10); */
+  }
+  .container5 div img:hover {
+    transform: scale(1.2);
+    /* filter: grayscale(10); */
+  }
+
+  .container5 div .child {
+    border: none;
+    position: absolute;
+    width: 100%;
+    transition: all 2s;
+    bottom: -100%;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.637);
+  }   
+  .container5 div:hover .child {
+    bottom: -50%;
+    z-index: 2;
+  }
+.container5 button{
+    display: block;
+    padding: 10px 40px;
+    margin: auto;
+    font-size: 20px;
+    color: aliceblue;
+    background-color: rgba(255, 166, 0, 0.616);
+    transition: all 0.6s;
+    border: none;
+}
+.container5 button:hover{
+    border-radius: 1cm;
+    background-color: orange;
+
+}
+
+
+
+
+
+.container6 div {
+    position: relative;
+    /* border: 2px solid black; */
+    width: 65%;
+    margin: auto;
+    height: 400px;
+    overflow: hidden;
+  }
+
+  .container6 div img {
+    transition: all 1s;
+    width: 100%;
+    height: 100%;
+  }
+  .container6 div img:hover {
+    transform: scale(1.4) rotate(12deg); 
+  }
+  .container6  div p{
+    padding: 10px;
+  }
+  .container6 div .child {
+    text-align: center;
+    padding:30px 10px;
+    border: none;
+    position: absolute;
+    width: 100%;
+    transition: all 1.5s;
+    left: -110%;
+    color: aliceblue;
+    background-color: rgba(145, 18, 219, 0.658);
+  } 
+
+  .container6 div:hover .child {
+    left: -10%;
+    z-index: 2;
+  }
+
+.head5{
+    text-align: center;
+    font-family: 'Protest Riot', sans-serif;
+}
+.para2{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+}
+footer{
+    margin-top: 50px;
+    font-size: 18px;
+    background-color: gainsboro;
+}
+footer div{
+    margin-left:50%;
+    padding-top: 20px;
+
+}
+footer p{
+    text-align: center;
+    margin-top: 
+    20px;
+}
+footer .div2{
+    position: relative;
+    right: 40px;
+    display: flex;
+    font-size: 25px;
+    gap: 30px;
+    padding-bottom: 30px;
+    
+    
+}
+footer i{
+    transition: all 0.3s;
+
+}
+footer i:hover{
+    color: rgb(0, 110, 255);
+    transform: scale(1.2) rotate(10deg);
+}
